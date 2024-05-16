@@ -7,11 +7,21 @@
     color:white;
 }
 .navbar-brand:hover{
-    color: #D2AF61; 
-    text-decoration: none;
+    color: #D2AF61!important; 
+    text-decoration: none!important;
+}
+.navbar-brand:active{
+    color: #D2AF61!important; 
+    text-decoration: none!important;
 }
 .golden-palace{
-    color: #D2AF61
+    color: #D2AF61!important
+}
+.golden-palace:hover{
+    color: #D2AF61!important
+}
+.golden-palace:active{
+    color: #D2AF61!important
 }
 .navbar-toggler{
     color: white!important;

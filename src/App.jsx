@@ -13,8 +13,8 @@ function App() {
     </header>
     <Routes>
       <Route path="/" element={<ItemListContainer />}/>
-      <Route path="/brand/:idBrand" element={ <ItemListContainer /> }/>
-      <Route path="/detail/:idProduct" element={<ItemDetailContainer />} />
+      <Route path="/genre/:idGenre" element={ <ItemListContainer /> }/>
+      <Route path="/detail/:nameProduct/:idProduct" element={<ItemDetailContainer />} />
     </Routes>
     </BrowserRouter>
   )

@@ -27,6 +27,7 @@ const ItemDetail = ({ product }) => {
         <div className="content-detail">
           <p className="name-detail">{product.name}</p>
           <p className="text-detail">{product.brand}</p>
+          <p className="text-detail">{product.genre}</p>
           <p className="text-detail">${product.price}</p>
         </div>
       </div>

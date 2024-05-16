@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Item = ({ product }) => {
   return (
-    <Link to={`/detail/${product.id}`}>
+    <Link to={`/detail/${product.name}/${product.id}`} className='link-style'>
     <div className="item">
       <img
         className="image-item"
@@ -11,7 +11,8 @@ const Item = ({ product }) => {
         alt='img'
       />
       <div className="content-item">
-        <p>{product.name}</p>
+        <p className='item-name'>{product.name}</p>
+        <p className='item-brand'>{product.brand}</p>
       </div>
     </div>
     </Link>

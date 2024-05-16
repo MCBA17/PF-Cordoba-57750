@@ -7,13 +7,13 @@ import logo from "../../images/goldenpalace1.png"
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
-  const { idBrand } = useParams()
+  const { idGenre } = useParams()
 
   useEffect(() => {
     getProducts()
       .then((respuesta) => {
-        if(idBrand){
-          const productsFilter = respuesta.filter( (productRes)=> productRes.brand === idBrand )
+        if(idGenre){
+          const productsFilter = respuesta.filter( (productRes)=> productRes.genre === idGenre )
           setProducts(productsFilter)
         }
         else{
@@ -27,7 +27,7 @@ const ItemListContainer = () => {
       .finally(() => {
         console.log("Fin de la promesa");
       });
-  }, [idBrand]);
+  }, [idGenre]);
 
   return (
     <>
