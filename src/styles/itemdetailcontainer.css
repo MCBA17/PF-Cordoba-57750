@@ -1,0 +1,28 @@
+.content-detail{
+    color: white;
+    margin-left: 4rem;
+}
+.name-detail{
+    font-size: 2rem;
+}
+.text-detail{
+    font-size: 1.5rem;
+}
+.item-detail{
+    border-radius: 50%;
+}
+.carousel-control-next{
+    border-radius: 25px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.carousel-control-prev{
+    border-radius: 25px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 25%;
+}

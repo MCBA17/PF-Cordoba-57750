@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import logo from "../../images/goldenpalace1.png"
 
 
-const ItemListContainer = ({ saludo }) => {
+const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
   const { idBrand } = useParams()
 
@@ -13,7 +13,6 @@ const ItemListContainer = ({ saludo }) => {
     getProducts()
       .then((respuesta) => {
         if(idBrand){
-          //filtrar la data por la categoria que almacena idCategory
           const productsFilter = respuesta.filter( (productRes)=> productRes.brand === idBrand )
           setProducts(productsFilter)
         }
@@ -44,10 +43,3 @@ const ItemListContainer = ({ saludo }) => {
 };
 
 export default ItemListContainer;
-
-
-
-
-
-
-

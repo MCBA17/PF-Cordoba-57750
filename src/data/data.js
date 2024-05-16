@@ -1,53 +1,59 @@
-function RandomId() {
-    return Math.random().toString(36).substr(2, 9);
-  }
-
-const sizes = [35, 35.5, 36, 36.5, 37, 37.5, 38, 38.5, 39, 39.5, 40, 40.5, 41, 41.5, 42, 42.5, 43, 43.5, 44, 44.5, 45, 45.5]
 
 const products = [
     {
-      id: RandomId(),
-      name: "Zapatillas Nike Air Zoom Pegasus 39",
-      brand: "Nike",
-      price: 125999,
+      id: "1",
+      name: "LE MALE LOVER EDP 125ML E.L.",
+      genre: "Masculino",
+      brand: "Jean Paul Gaultier",
+      price: 150000,
       stock: 11,
-      size: sizes,
-      image1: "/images/productImages/i1-1.jpg",
-      image2: "/images/productImages/i1-2.jpg",
-      image3: "/images/productImages/i1-3.jpg"
+      image1: "/src/images/productImages/i1-1.jpg",
+      image2: "/src/images/productImages/i1-2.jpg",
+      image3: "/src/images/productImages/i1-3.jpg"
     },
     {
-      id: RandomId(),
-      name: "Zapatillas Topper Split",
-      brand: "Topper",
-      price: 43200,
+      id: "2",
+      name: "DEFY EDT 100ML",
+      genre: "Masculino",
+      brand: "Calvin Klein",
+      price: 125000,
       stock: 14,
-      size: sizes,
-      image1: "/images/productImages/i2-1.jpg",
-      image2: "/images/productImages/i2-2.jpg",
-      image3: "/images/productImages/i2-3.jpg"
+      image1: "/src/images/productImages/i2-1.jpg",
+      image2: "/src/images/productImages/i2-2.jpg",
+      image3: "/src/images/productImages/i2-3.jpg"
     },
     {
-      id: RandomId(),
-      name: "Zapatillas Nike Revolution 6 Nn",
-      brand: "Nike",
-      price: 62000,
+      id: "3",
+      name: "MY WAY EDP 90ML",
+      genre: "Femenino",
+      brand: "Armani",
+      price: 181000,
       stock: 7,
-      size: sizes,
-      image1: "/images/productImages/i3-1.jpg",
-      image2: "/images/productImages/i3-2.jpg",
-      image3: "/images/productImages/i3-3.jpg"
+      image1: "/src/images/productImages/i3-1.jpg",
+      image2: "/src/images/productImages/i3-2.jpg",
+      image3: "/src/images/productImages/i3-3.jpg"
     },
     {
-      id: RandomId(),
-      name: "Zapatillas Adidas Questar",
-      brand: "Adidas",
-      price: 84000,
+      id: "4",
+      name: "OLYMPEA SOLAR EDP INTENSE 80ML",
+      genre: "Femenino",
+      brand: "Rabanne",
+      price: 133000,
       stock: 4,
-      size: sizes,
-      image1: "/images/productImages/i4-1.jpg",
-      image2: "/images/productImages/i4-2.jpg",
-      image3: "/images/productImages/i4-3.jpg"
+      image1: "/src/images/productImages/i4-1.jpg",
+      image2: "/src/images/productImages/i4-2.jpg",
+      image3: "/src/images/productImages/i4-3.jpg"
+    },
+    {
+      id: "5",
+      name: "EVERYONE EDP 100ML",
+      genre: "Genderless",
+      brand: "Rabanne",
+      price: 123800,
+      stock: 4,
+      image1: "/src/images/productImages/i5-1.jpg",
+      image2: "/src/images/productImages/i5-2.jpg",
+      image3: "/src/images/productImages/i5-3.jpg"
     }
   ]
 
@@ -58,5 +64,5 @@ const products = [
       }, 3000);
     });
   };
-  
+
   export default getProducts

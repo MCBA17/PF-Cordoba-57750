@@ -1,6 +1,7 @@
 .navbar{
     padding: 0;
     background-color: #242526 !important;
+    border-bottom: white 3px;
 }
 .active{
     color:white;
