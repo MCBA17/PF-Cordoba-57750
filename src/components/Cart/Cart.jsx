@@ -1,9 +1,27 @@
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Cart = () => {
   const { carrito, vaciarCarrito, borrarProductoPorId, precioTotal } = useContext(CartContext);
+
+  const confirmarVaciarCarrito = () => {
+    Swal.fire({
+      title: '¿Estás seguro?',
+      text: 'Esta acción vaciará tu carrito de compras',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Sí, vaciar carrito',
+      cancelButtonText: 'Cancelar'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        vaciarCarrito();
+      }
+    });
+  };
 
   if (carrito.length === 0) {
     return (
@@ -28,7 +46,7 @@ const Cart = () => {
       ))}
       <h2>Total de la compra : ${precioTotal()}</h2>
       <Link to="/checkout" className="button-link">Continuar con mi compra</Link>
-      <div className="button-delete" onClick={vaciarCarrito}>Vaciar carrito</div>
+      <div className="button-delete" onClick={confirmarVaciarCarrito}>Vaciar carrito</div>
     </div>
   );
 };

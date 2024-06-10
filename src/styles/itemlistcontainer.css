@@ -13,7 +13,7 @@ body{
 
 .title-container h1 {
     color: white;
-    margin-top: 4rem;
+    margin-top: 8rem;
 }
 
 .title-container img {
@@ -79,4 +79,16 @@ body{
 }
 .link-style{
     text-decoration: none!important;
+}
+.btn{
+    background-color: transparent;
+    margin-right: 1rem;
+}
+.dropdown{
+    display: flex;
+    justify-content: center;
+}
+.dropdown-item:active{
+    background-color: #131313;
+    color: white;
 }

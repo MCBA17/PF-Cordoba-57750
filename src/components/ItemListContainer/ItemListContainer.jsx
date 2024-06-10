@@ -6,6 +6,7 @@ import { collection, getDocs, query, where } from "firebase/firestore";
 import db from "../../db/db.js";
 import Loading from "../Loading/Loading.jsx";
 import Carousel from "../ItemListContainer/carousel.jsx";
+import { Link } from "react-router-dom";
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
@@ -66,13 +67,34 @@ const ItemListContainer = () => {
 
   return (
     <>
+      <Carousel />
       <div className="title-container">
         <h1>
           Bienvenido/a a&nbsp;<span className="golden-palace">Golden Palace</span>
         </h1>
         <img src={logo} alt="logo" />
       </div>
-      <Carousel />
+      <div className="dropdown">
+  <Link to="/" className="btn btn-secondary">Reiniciar Filtros</Link>
+  <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Género
+  </button>
+  <ul class="dropdown-menu">
+    <li><Link to="/genre/Masculino" class="dropdown-item" href="#">Masculino</Link></li>
+    <li><Link to="/genre/Femenino" class="dropdown-item" href="#">Femenino</Link></li>
+    <li><Link to="/genre/Genderless" class="dropdown-item" href="#">Unisex</Link></li>
+  </ul>
+  <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Marca
+  </button>
+  <ul class="dropdown-menu">
+    <li><Link to="/brand/Rabanne" class="dropdown-item" href="#">Rabanne</Link></li>
+    <li><Link to="/brand/Armani" class="dropdown-item" href="#">Armani</Link></li>
+    <li><Link to="/brand/Jean Paul Gaultier" class="dropdown-item" href="#">Jean Paul Gaultier</Link></li>
+    <li><Link to="/brand/Calvin Klein" class="dropdown-item" href="#">Calvin Klein</Link></li>
+    <li><Link to="/brand/Carolina Herrera" class="dropdown-item" href="#">Carolina Herrera</Link></li>
+  </ul>
+</div>
       <div className="item-list-container">
         {loading ? <Loading /> : <ItemList products={products} />}
       </div>
