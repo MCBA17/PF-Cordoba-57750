@@ -26,7 +26,6 @@
 <img src="https://seeklogo.com/images/G/gmail-new-2020-logo-32DBE11BB4-seeklogo.com.png" width= 50>
 <p style="font-size:1.2rem; padding-left: 15px">maticba951@gmail.com</p>
 </div>
-<br>
 <div style="display:flex;">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/2062095_application_chat_communication_logo_whatsapp_icon.svg/1200px-2062095_application_chat_communication_logo_whatsapp_icon.svg.png" width= 50>
 <p style="font-size:1.2rem; padding-left: 15px">351 530-8390</p>
