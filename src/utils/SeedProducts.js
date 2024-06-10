@@ -1,18 +1,8 @@
+import db from "../db/db.js";
+import { addDoc, collection } from "firebase/firestore";
 
 const products = [
     {
-      id: "1",
-      name: "LE MALE LOVER EDP 125ML E.L.",
-      genre: "Masculino",
-      brand: "Jean Paul Gaultier",
-      price: 150000,
-      stock: 11,
-      image1: "/src/images/productImages/i1-1.jpg",
-      image2: "/src/images/productImages/i1-2.jpg",
-      image3: "/src/images/productImages/i1-3.jpg"
-    },
-    {
-      id: "2",
       name: "DEFY EDT 100ML",
       genre: "Masculino",
       brand: "Calvin Klein",
@@ -23,7 +13,6 @@ const products = [
       image3: "/src/images/productImages/i2-3.jpg"
     },
     {
-      id: "3",
       name: "MY WAY EDP 90ML",
       genre: "Femenino",
       brand: "Armani",
@@ -34,7 +23,6 @@ const products = [
       image3: "/src/images/productImages/i3-3.jpg"
     },
     {
-      id: "4",
       name: "OLYMPEA SOLAR EDP INTENSE 80ML",
       genre: "Femenino",
       brand: "Rabanne",
@@ -45,7 +33,6 @@ const products = [
       image3: "/src/images/productImages/i4-3.jpg"
     },
     {
-      id: "5",
       name: "EVERYONE EDP 100ML",
       genre: "Genderless",
       brand: "Rabanne",
@@ -57,12 +44,11 @@ const products = [
     }
   ]
 
-  const getProducts = () => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(products)
-      }, 1500);
-    });
-  };
+const seedProducts = () => {
+  products.map(({ id, ...rest }) =>{
+    addDoc(collection(db, "products"), rest)
+  });
+  return
+}
 
-  export default getProducts
+seedProducts()

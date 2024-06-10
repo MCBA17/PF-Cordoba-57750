@@ -8,21 +8,45 @@
 .text-detail{
     font-size: 1.5rem;
 }
+.text-detail-brand{
+    font-size: 1.5rem;
+    color: #D2AF61;
+}
+.text-detail-masculino{
+    font-size: 1.5rem;
+    color: rgb(41, 41, 160);
+}
+.text-detail-femenino{
+    font-size: 1.5rem;
+    color: rgb(236, 95, 119);
+}
+.text-detail-genderless{
+    font-size: 1.5rem;
+    color: rgb(144, 51, 156);
+}
 .item-detail{
     border-radius: 50%;
 }
 .carousel-control-next{
-    border-radius: 25px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
 }
 .carousel-control-prev{
-    border-radius: 25px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
 }
+
+.carousel-control-prev:hover{
+    background-color: #131313;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-control-next:hover{
+    background-color: #131313;
+    transition: background-color 0.3s ease;
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: black;
   border-radius: 25%;
 }

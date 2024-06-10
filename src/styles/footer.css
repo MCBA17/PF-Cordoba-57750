@@ -1,0 +1,43 @@
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    background-color: #242526;
+    margin-top: 6rem;
+  }
+  
+  .footer-item {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .footer-txt {
+    margin: 5px 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-item img {
+    width: 60px;
+    height: auto;
+    padding: 1rem;
+  }
+  
+  .copyright {
+    font-size: 0.9rem;
+    color: black
+  }
+
+  .copyright p{
+    margin: 0;
+  }
+  
+  .copyright-container{
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+  }

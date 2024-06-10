@@ -1,3 +1,8 @@
 @import "./styles/navbar";
 @import "./styles/itemlistcontainer";
 @import "./styles/itemdetailcontainer";
+@import "./styles/loading";
+@import "./styles/cart";
+@import "./styles/itemcount.css";
+@import "./styles/form.css";
+@import "./styles/footer.css"

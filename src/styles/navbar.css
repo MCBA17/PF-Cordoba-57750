@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+}
+
 .navbar{
     padding: 0;
     background-color: #242526 !important;
@@ -43,12 +47,17 @@
     width: 3.5rem
 }
 .cart-number{
-    color: rgb(0, 0, 0);
+    color: white;
     font-size: 1.1rem;
-    background-color: #D2AF61;
-    padding: 5px 10px;
+    background-color: black;
+    padding: 7px 12px;
     border-radius: 50%;
 }
 .nav-cart-container{
     margin-right: 4rem;
+    display: flex;
+}
+.dropdown-menu-dark .dropdown-item:active {
+    color: #242526;
+    background-color: #D2AF61;
 }

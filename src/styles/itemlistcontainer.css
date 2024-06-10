@@ -7,14 +7,13 @@ body{
     display: flex;
     justify-content: center; 
     padding-bottom: 2rem;
-    border-bottom: solid white 2px;
     margin-right: 20rem;
     margin-left: 20rem;
 }
 
 .title-container h1 {
     color: white;
-    margin-top: 9rem;
+    margin-top: 4rem;
 }
 
 .title-container img {
@@ -27,8 +26,7 @@ body{
 .item-list-container {
     padding: 5rem 10rem;
     margin-top: 5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    background-color: rgb(238, 238, 238);
 }
 
 .item-list {
@@ -45,12 +43,14 @@ body{
     padding: 1rem;
     background-color: white;
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añadido para suavizar la transición de la escala y la sombra */
 }
 
 .item:hover {
-    background-color: #D2AF61;
-    transition: 0.3s;
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añadir sombra */
 }
+
 
 .image-item {
     border-radius: 5px;

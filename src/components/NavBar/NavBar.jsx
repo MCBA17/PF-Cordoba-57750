@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from "../../images/goldenpalace1.png"
-import CartWidget from "../CartWidget"
+import CartWidget from '../CartWidget/CartWidget';
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -27,11 +27,20 @@ const NavBar = () => {
             <li><Link to={"/genre/Genderless"} class="dropdown-item" href="#">Unisex</Link></li>
           </ul>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Shop</a>
+        <li class="nav-item dropdown">
+          <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Marca
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><Link to={"/brand/Rabanne"} class="dropdown-item" href="#">Rabanne</Link></li>
+            <li><Link to={"/brand/Dior"} class="dropdown-item" href="#">Dior</Link></li>
+            <li><Link to={"/brand/Jean Paul Gaultier"} class="dropdown-item" href="#">Jean Paul Gaultier</Link></li>
+            <li><Link to={"/brand/Calvin Klein"} class="dropdown-item" href="#">Calvin Klein</Link></li>
+            <li><Link to={"/brand/Carolina Herrera"} class="dropdown-item" href="#">Carolina Herrera</Link></li>
+          </ul>
         </li>
       </ul>
-      <CartWidget NumeroDeObjetos="2" />
+      <CartWidget />
     </div>
   </div>
 </nav>

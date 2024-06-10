@@ -1,0 +1,50 @@
+.itemcount {
+    display: flex;
+    align-items: center;
+  }
+  
+.itemcount-button-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+.itemcount-button {
+    background-color: transparent;
+    color: #D2AF61;
+    border: solid 2px #D2AF61;
+    padding: 0.2rem 0.8rem;
+    margin: 0 5px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+  }
+
+.itemcount-button:hover{
+  color: white;
+  background-color: #D2AF61;
+  transition: 0.3s;
+}
+
+.itemcount-submit {
+    background-color: transparent;
+    color: #D2AF61;
+    border: solid 2px #D2AF61;
+    border-radius: 5px;
+    padding: 9px 27px;
+  }
+
+.itemcount-submit:hover{
+  color: white;
+  background-color: #D2AF61;
+  transition: 0.3s;
+}
+
+.itemcount-number{
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+.btn-outline-light{
+    margin-right: 10px;
+  }
